@@ -7,19 +7,19 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white h-screen text-black">
+<body id="body" class="bg-white h-screen text-black container mx-auto ">
 
   <nav class="flex justify-between items-center h-[100px] py-10 bg-white my-2 rounded-3xl">
     <div class="flex items-center ml-5 gap-3">
-      <img src="../assets/logo.png" alt="">
+      <img src="./assets/logo.png" alt="">
     <h2>Dev <span class="font-bold">Board</span></h2>
     </div>
     
     <div class="flex mr-6 gap-4 justify-center items-center">
-      <div class=" flex gap-5 bg-slate-300 p-1 rounded-2xl"><img src="../assets/checkbox.png" alt="">
+      <div class=" flex gap-5 bg-slate-300 p-1 rounded-2xl"><img src="./assets/checkbox.png" alt="">
       <h3 id="nav23">23</h3>
     </div>
-    <img src="../assets/theme-btn.png" alt="">
+    <img id="thinm" src="./assets/theme-btn.png" alt="">
     </div>
   </nav>
   <!-- this is the date section -->
@@ -30,25 +30,28 @@
      <div>
           <div class=" flex px-3 gap-5 ">
             <div class=" bg-[#F4F7FF] rounded-lg w-1/4 flex justify-around items-center">
-              <img class="h-8" src="..//assets/checkbox.png" alt="">
+              <img class="h-8" src=".//assets/checkbox.png" alt="">
               <p>task Assigned <br>
                 <span id="taskAssigned" class="font-bold text-xl">6</span>
               </p>
             </div>
-            <div class="w-1/2 bg-green-400 flex px-10 rounded-xl items-center gap-5">
-              <img src="../assets/board.png" alt="">
-              <p>Discover Something <br>
-                New Today!</p>
-            </div>
-          
+           
+       <div><a href="./index1.html">
+        <div class="w-1/2 bg-gradient-to-r from-blue-700 to-blue-300 flex px-10 rounded-xl items-center gap-5">
+          <img src="./assets/board.png" alt="">
+          <p>Discover Something <br>
+            New Today!</p>
+        </div>
+      </a>
+    </div>
             <div class="bg-[#F4F7FF] rounded-lg w-1/4 flex justify-around items-center">
-              <img src="../assets/calender.png" alt="">
-              <p>wed, <br>
-                <span class="font-bold">Jul 28 2025</span>
+              <img src="./assets/calender.png" alt="">
+              <p id="date">wed <span class="font-bold">Jul 28 2025</span>
               </p>
             </div>
           </div>
-              <!-- card section -->
+
+      <!-- card section -->
       <div class="grid grid-cols-3 gap-3 py-3 mx-3">
       
         <div class="bg-[#F4F7FF] p-2 rounded-md ">
@@ -111,7 +114,7 @@
               <p>Deadline</p>
               <h4 class="font-medium">21 March 2025</h4>
             </div>
-            <button class="bg-[#3752FD] text-white p-3 my-2 rounded-lg">Completed</button>
+            <button id="Integrate" class="bg-[#3752FD] text-white p-3 my-2 rounded-lg">Completed</button>
           </div>
         </div>
         <div class="bg-[#F4F7FF] p-2 rounded-md">
@@ -123,7 +126,7 @@
               <p>Deadline</p>
               <h4 class="font-medium">21 March 2025</h4>
             </div>
-            <button class="bg-[#3752FD] text-white p-3 my-2 rounded-lg">Completed</button>
+            <button id="Improve" class="bg-[#3752FD] text-white p-3 my-2 rounded-lg">Completed</button>
           </div>
         </div>
       
@@ -133,27 +136,34 @@
       </div>
      </div>
 
-     
-      <!-- history section -->
-    <div class="w-1/4 bg-yellow-200 rounded-2xl ">
 
-        <div class=" border-b-2 border-black border-dotted flex-col justify-items-center py-2 ">
-          <img src="../assets/activity.png" alt="">
-          <p>activity Log</p>
-          <button class="bg-[#3752FD] text-white p-3 my-2 rounded-lg">Clear History</button>
-        </div>
-        
-        <!-- extra part -->
-        <div id="history"></div>
+
+
+
+
+
+
+      <!-- history section -->
+    <div class="w-1/4 rounded-2xl ">
+
+      <div class=" border-b-2 border-black border-dotted flex-col justify-items-center py-2 ">
+        <img src="../assets/activity.png" alt="">
+        <p>activity Log</p>
+        <button id="clear" class="bg-[#3752FD] text-white p-3 my-2 rounded-lg">Clear History</button>
       </div>
       
-  
-      </div>
-    </section>
-  
-  <script src="index.js"></script>
-  <script src="index1.js"></script>
-      
+      <!-- extra part -->
+      <div id="history"></div>
+    </div>
+    
+
+    </div>
+  </section>
+
+<script src="../script/script.js"></script>
+<script src="../script/toogle.js"></script>
+    
+
 
 </body>
 </html>
